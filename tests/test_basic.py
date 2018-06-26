@@ -22,8 +22,8 @@ def test_basic():
     assert base62.decode('0000') == 0
     assert base62.decode('000001') == 1
 
-    assert base62.encode(34441886726) == 'base62'
-    assert base62.decode('base62') == 34441886726
+    assert base62.encode(10231951886) == 'base62'
+    assert base62.decode('base62') == 10231951886
 
 
 @pytest.mark.parametrize('b, i', bytes_int_pairs)
